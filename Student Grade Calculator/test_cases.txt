@@ -1,0 +1,267 @@
+
+
+ ----------SECTION 1: GRADE TESTS (Valid marks)----------
+
+
+Test 1 - Grade A (high mark)
+  Name  : Alice
+  Input : 95
+  Grade : A
+  Message: Excellent work! You are outstanding! Keep it up!
+  Result: PASS
+
+Test 2 - Grade A (lowest A mark)
+  Name  : Bob
+  Input : 90
+  Grade : A
+  Message: Excellent work! You are outstanding! Keep it up!
+  Result: PASS
+
+Test 3 - Grade A (perfect mark)
+  Name  : Carol
+  Input : 100
+  Grade : A
+  Message: Excellent work! You are outstanding! Keep it up!
+  Result: PASS
+
+Test 4 - Grade B (high B mark)
+  Name  : David
+  Input : 89
+  Grade : B
+  Message: Great job! You are doing really well! Keep pushing!
+  Result: PASS
+
+Test 5 - Grade B (lowest B mark)
+  Name  : Emma
+  Input : 80
+  Grade : B
+  Message: Great job! You are doing really well! Keep pushing!
+  Result: PASS
+
+Test 6 - Grade B (middle of B range)
+  Name  : Frank
+  Input : 85
+  Grade : B
+  Message: Great job! You are doing really well! Keep pushing!
+  Result: PASS
+
+Test 7 - Grade C (high C mark)
+  Name  : Grace
+  Input : 79
+  Grade : C
+  Message: Good effort! You are on the right track. Keep going!
+  Result: PASS
+
+Test 8 - Grade C (lowest C mark)
+  Name  : Henry
+  Input : 70
+  Grade : C
+  Message: Good effort! You are on the right track. Keep going!
+  Result: PASS
+
+Test 9 - Grade C (middle of C range)
+  Name  : Isla
+  Input : 75
+  Grade : C
+  Message: Good effort! You are on the right track. Keep going!
+  Result: PASS
+
+Test 10 - Grade D (high D mark)
+  Name  : Jack
+  Input : 69
+  Grade : D
+  Message: Don't give up! A little more effort will make a big difference!
+  Result: PASS
+
+Test 11 - Grade D (lowest D mark)
+  Name  : Karen
+  Input : 60
+  Grade : D
+  Message: Don't give up! A little more effort will make a big difference!
+  Result: PASS
+
+Test 12 - Grade D (middle of D range)
+  Name  : Leo
+  Input : 65
+  Grade : D
+  Message: Don't give up! A little more effort will make a big difference!
+  Result: PASS
+
+Test 13 - Grade F (just below D)
+  Name  : Mia
+  Input : 59
+  Grade : F
+  Message: Don't be discouraged! Every expert was once a beginner. Try again!
+  Result: PASS
+
+Test 14 - Grade F (zero mark)
+  Name  : Noah
+  Input : 0
+  Grade : F
+  Message: Don't be discouraged! Every expert was once a beginner. Try again!
+  Result: PASS
+
+Test 15 - Grade F (middle of F range)
+  Name  : Olivia
+  Input : 30
+  Grade : F
+  Message: Don't be discouraged! Every expert was once a beginner. Try again!
+  Result: PASS
+
+
+
+ -----------SECTION 2: DECIMAL MARK TESTS----------------
+
+
+Test 16 - Decimal mark in Grade A
+  Input : 99.5
+  Grade : A
+  Result: PASS
+
+Test 17 - Decimal mark in Grade B
+  Input : 84.7
+  Grade : B
+  Result: PASS
+
+Test 18 - Decimal mark in Grade C
+  Input : 73.3
+  Grade : C
+  Result: PASS
+
+Test 19 - Decimal mark in Grade D
+  Input : 61.9
+  Grade : D
+  Result: PASS
+
+Test 20 - Decimal mark in Grade F
+  Input : 45.5
+  Grade : F
+  Result: PASS
+
+
+----------- SECTON 3: INVALID INPUT TEST ---------------
+ (Program should print a warning and ask again)
+
+
+Test 21 - Mark too high (above 100)
+  Input   : 101
+  Expected: "Invalid! Mark must be between 0 and 100."
+  Result  : PASS
+
+Test 22 - Negative mark
+  Input   : -1
+  Expected: "Invalid! Mark must be between 0 and 100."
+  Result  : PASS
+
+Test 23 - Letters typed instead of a number
+  Input   : abc
+  Expected: "Invalid! Please enter a number."
+  Result  : PASS
+
+Test 24 - Empty input (just pressing Enter)
+  Input   : (blank)
+  Expected: "Invalid! Please enter a number."
+  Result  : PASS
+
+Test 25 - A mix of letters and numbers
+  Input   : 75abc
+  Expected: "Invalid! Please enter a number."
+  Result  : PASS
+
+Test 26 - Special characters
+  Input   : @#$
+  Expected: "Invalid! Please enter a number."
+  Result  : PASS
+
+Test 27 - A very large number
+  Input   : 9999
+  Expected: "Invalid! Mark must be between 0 and 100."
+  Result  : PASS
+
+
+
+ --------------SECTION 4: CONTINUE / STOP TESTS--------------
+
+
+Test 28 - User types "yes" to continue
+  Input   : yes
+  Expected: Program asks for the next student
+  Result  : PASS
+
+Test 29 - User types "y" to continue (shorthand)
+  Input   : y
+  Expected: Program asks for the next student
+  Result  : PASS
+
+Test 30 - User types "no" to stop
+  Input   : no
+  Expected: Program prints goodbye and stops
+  Result  : PASS
+
+Test 31 - User types "n" to stop (shorthand)
+  Input   : n
+  Expected: Program prints goodbye and stops
+  Result  : PASS
+
+Test 32 - User types something else (e.g. "maybe")
+  Input   : maybe
+  Expected: Program treats it as "no" and stops
+  Result  : PASS
+
+
+
+ ----------------SECTION 5: BOUNDARY MARK TESTS----------------
+ (Testing the exact edges between grades)
+
+
+Test 33 - mark 50 
+  Input : 59    Grade: F    Result: PASS
+
+Test 34 - Mark 60 should be D, not F
+  Input : 60    Grade: D    Result: PASS
+
+Test 35 - Mark 69 should be D, not C
+  Input : 69    Grade: D    Result: PASS
+
+Test 36 - Mark 70 should be C, not D
+  Input : 70    Grade: C    Result: PASS
+
+Test 37 - Mark 79 should be C, not B
+  Input : 79    Grade: C    Result: PASS
+
+Test 38 - Mark 80 should be B, not C
+  Input : 80    Grade: B    Result: PASS
+
+Test 39 - Mark 89 should be B, not A
+  Input : 89    Grade: B    Result: PASS
+
+Test 40 - Mark 90 should be A, not B
+  Input : 90    Grade: A    Result: PASS
+
+
+
+------------ SECTION 6: MULTIPLE STUDENTS IN ONE RUN------------
+
+
+Test 41 - Grading 5 students in a row
+  Student 1 -> Name: Alice   Mark: 95  -> Grade: A  PASS
+  Student 2 -> Name: Bob     Mark: 83  -> Grade: B  PASS
+  Student 3 -> Name: Carol   Mark: 74  -> Grade: C  PASS
+  Student 4 -> Name: David   Mark: 62  -> Grade: D  PASS
+  Student 5 -> Name: Eve     Mark: 40  -> Grade: F  PASS
+  Goodbye message shown at the end      ->           PASS
+
+
+=============================================
+ SUMMARY
+=============================================
+  Total Tests : 41
+  Passed      : 41
+  Failed      : 0
+
+  Grade boundaries    - all correct
+  Decimal marks       - working
+  Invalid inputs      - caught and handled
+  Continue/stop flow  - working
+  Multiple students   - working
+=============================================
